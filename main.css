@@ -1,0 +1,41 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f1f1f1;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.drums {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.drums__btn {
+    width: 70px;
+    padding: 10px;
+    background-color: #bbb;
+    border-radius: 4px;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 10px;
+    border: solid 3px #bbb;
+    box-sizing: border-box;
+    transition: all 0.07s;
+}
+
+.drums__btn.active {
+    border-color: #eea72c;
+    transform: scale(1.08);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.drums__letter {
+    font-size: 24px;
+    text-transform: uppercase;
+}
